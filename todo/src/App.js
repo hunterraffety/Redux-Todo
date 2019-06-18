@@ -2,7 +2,7 @@
 import React from 'react';
 
 // components
-import Form from './components/Form/Form';
+import Form from './components/Form';
 
 // styles
 import './App.css';
