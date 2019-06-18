@@ -1,15 +1,20 @@
+// dependencies
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-import todo from './reducers';
+// reducer
+import todos from './reducers/todos';
 
-const store = createStore(todo);
+// styles
+import './index.css';
+
+// components
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+
+const store = createStore(todos);
 
 ReactDOM.render(
   <Provider store={store}>
